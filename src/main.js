@@ -8,3 +8,9 @@ window.onload = function() {
 
   console.log();
 };
+
+document.querySelector(".top").innerHTML = "&#9824;";
+
+document.querySelector(".number").innerHTML = "5";
+
+document.querySelector(".bottom").innerHTML = "&#9824;";
