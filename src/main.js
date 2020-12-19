@@ -13,6 +13,12 @@ window.onload = () => {
     return numbers[Math.floor(Math.random() * numbers.length)];
   }
   var pickACard = randomSuit();
+  if (pickACard == "&diams;" || pickACard == "&hearts;") {
+    document.querySelector(".top").style.color = "red";
+    document.querySelector(".number").style.color = "red";
+    document.querySelector(".bottom").style.color = "red";
+  }
+
   document.querySelector(".top").innerHTML = pickACard;
   document.querySelector(".number").innerHTML = randomNumber();
   document.querySelector(".bottom").innerHTML = pickACard;
